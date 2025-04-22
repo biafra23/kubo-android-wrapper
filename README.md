@@ -42,5 +42,4 @@ CoroutineScope(Dispatchers.IO).launch {
 - The `DEBUG` log level is used for debugging purposes. You can change it to `INFO`, `WARN`, or `ERROR` as needed.
 - The `daemon --init` command initializes the IPFS repository if it does not exist. You can change this to other commands as needed.
 - The `runCli` method is a blocking call, meaning it will not return until the Kubo daemon is stopped. You may want to run it in a separate thread or use coroutines to avoid blocking the main thread.
-- Make sure to handle the permissions for accessing the file system in your Android app, especially if you are targeting Android 10 or higher. You may need to request permissions at runtime.
 
