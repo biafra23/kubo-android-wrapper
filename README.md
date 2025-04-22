@@ -6,10 +6,10 @@
 go mod tidy 
 go get golang.org/x/mobile/bind 
 go get google.golang.org/genproto@latest
-gomobile bind -ldflags "-checklinkname=0" -target=android -o wrapper.aar ./wrapper
+gomobile bind -ldflags "-checklinkname=0" -target=android -o kubo-wrapper.aar ./wrapper
 ```
 ## Add the wrapper library to your Android project
-1. Copy the `wrapper.aar` file to your Android project's `libs` directory.
+1. Copy the `kubo-wrapper.aar` file to your Android project's `libs` directory.
 2. Add the following lines to your `build.gradle` file:
 
 ```Kotlin
@@ -21,9 +21,11 @@ dependencies {
 ## Usage
 
 ```Kotlin
+import kubo.Kubo
+
 val ipfsRepoPath = applicationContext.filesDir.absolutePath + "/ipfs_repo"
 // start Kubo as a daemon and initialize repo if necessary
-Wrapper.runCli(ipfsRepoPath, "DEBUG", "daemon --init")
+Kubo.runCli(ipfsRepoPath, "DEBUG", "daemon --init")
 ```
 
 ## Notes

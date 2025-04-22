@@ -5,7 +5,6 @@ go 1.24.2
 require (
 	github.com/ipfs/go-log/v2 v2.5.1
 	github.com/ipfs/kubo v0.34.1
-	github.com/libp2p/go-libp2p v0.41.1
 )
 
 require (
@@ -128,6 +127,7 @@ require (
 	github.com/libp2p/go-cidranger v1.1.0 // indirect
 	github.com/libp2p/go-doh-resolver v0.5.0 // indirect
 	github.com/libp2p/go-flow-metrics v0.2.0 // indirect
+	github.com/libp2p/go-libp2p v0.41.1 // indirect
 	github.com/libp2p/go-libp2p-asn-util v0.4.1 // indirect
 	github.com/libp2p/go-libp2p-gostream v0.6.0 // indirect
 	github.com/libp2p/go-libp2p-http v0.5.0 // indirect
