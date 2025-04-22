@@ -1,4 +1,4 @@
-module github.com/biafra23/kubo-lib-wrapper
+module github.com/biafra23/kubo-android-wrapper
 
 go 1.24.2
 
