@@ -27,7 +27,7 @@ val ipfsRepoPath = applicationContext.filesDir.absolutePath + "/ipfs_repo"
 CoroutineScope(Dispatchers.IO).launch {
   try {
     // start Kubo as a daemon and initialize repo if necessary
-    Kubo.runCli(ipfsRepoPath, "INFO", "daemon --init")
+    Kubo.runCli(ipfsRepoPath, "DEBUG", "daemon --init")
   } catch (e: Exception) {
     e.printStackTrace()
   }
